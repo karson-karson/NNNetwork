@@ -1,0 +1,137 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NNNetwork
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Alamofire
+import Combine
+import CryptoKit
+import Foundation
+import Moya
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol APIConfigurable {
+  var baseURL: Foundation.URL { get }
+  var timeoutInterval: Foundation.TimeInterval { get }
+  var apiVersion: Swift.String { get }
+  var defaultHeaders: [Swift.String : Swift.String] { get }
+}
+extension NNNetwork.APIConfigurable {
+  public var defaultHeaders: [Swift.String : Swift.String] {
+    get
+  }
+}
+public protocol APIEnvironment {
+  static func getBaseURL() -> Foundation.URL
+  static func getTimeoutInterval() -> Foundation.TimeInterval
+  static func getAPIVersion() -> Swift.String
+}
+public struct APIConfig : NNNetwork.APIConfigurable {
+  public var baseURL: Foundation.URL
+  public var timeoutInterval: Foundation.TimeInterval
+  public var apiVersion: Swift.String
+  public var defaultHeaders: [Swift.String : Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(environment: any NNNetwork.APIEnvironment.Type, customURL: Foundation.URL? = nil)
+  #endif
+}
+public enum APIConfigProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func `default`(using environment: any NNNetwork.APIEnvironment.Type, customURL: Foundation.URL? = nil) -> any NNNetwork.APIConfigurable
+  #endif
+}
+public enum NetworkError : Swift.Error, Swift.Equatable {
+  case invalidURL
+  case requestFailed(code: Swift.String, message: Swift.String)
+  case decodingFailed(errorString: Swift.String)
+  case serverError(statusCode: Swift.Int, data: Foundation.Data?)
+  case unauthorized
+  case badRequest(code: Swift.String, message: Swift.String)
+  case networkError
+  case customError(code: Swift.String, message: Swift.String?)
+  case downloadBundleFailed
+  case unzipBundleFailed(message: Swift.String)
+  case others(statusCode: Swift.Int, data: Foundation.Data?)
+  case unknown
+  public var errorDescription: Swift.String {
+    get
+  }
+  public static func == (a: NNNetwork.NetworkError, b: NNNetwork.NetworkError) -> Swift.Bool
+}
+public class BaseInterceptor : @unchecked Swift.Sendable, Alamofire.RequestInterceptor {
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func adapt(_ urlRequest: Foundation.URLRequest, for session: Alamofire.Session, completion: @escaping (Swift.Result<Foundation.URLRequest, any Swift.Error>) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public protocol NetworkServiceProtocol {
+  func request<T>(_ target: T) -> Combine.AnyPublisher<T.ResponseType, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #if compiler(>=5.3) && $NonescapableTypes
+  func requestWithSuccessCode<T>(_ target: T, progress: Moya.ProgressBlock?) -> Combine.AnyPublisher<Swift.String, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #endif
+  func requestWithSuccessCode<T>(_ target: T) -> Combine.AnyPublisher<T.ResponseType, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #if compiler(>=5.3) && $NonescapableTypes
+  func request<T>(_ target: T, progress: Moya.ProgressBlock?) -> Combine.AnyPublisher<T.ResponseType, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #endif
+}
+final public class NetworkService : NNNetwork.NetworkServiceProtocol {
+  final public let provider: Moya.MoyaProvider<Moya.MultiTarget>
+  final public var responseErrorConverter: ((Moya.MoyaError) -> NNNetwork.NetworkError)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(provider: Moya.MoyaProvider<Moya.MultiTarget>? = nil, responseErrorConverter: ((Moya.MoyaError) -> NNNetwork.NetworkError)? = nil)
+  #endif
+  final public func request<T>(_ target: T) -> Combine.AnyPublisher<T.ResponseType, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func requestWithSuccessCode<T>(_ target: T, progress: Moya.ProgressBlock?) -> Combine.AnyPublisher<Swift.String, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #endif
+  final public func requestWithSuccessCode<T>(_ target: T) -> Combine.AnyPublisher<T.ResponseType, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func request<T>(_ target: T, progress: Moya.ProgressBlock?) -> Combine.AnyPublisher<T.ResponseType, NNNetwork.NetworkError> where T : NNNetwork.APIServiceTarget
+  #endif
+  @objc deinit
+}
+public protocol APIServiceTarget : Moya.TargetType {
+  associatedtype ResponseType : Swift.Decodable
+  var configuration: any NNNetwork.APIConfigurable { get }
+}
+extension NNNetwork.APIServiceTarget {
+  public var baseURL: Foundation.URL {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var headers: [Swift.String : Swift.String]? {
+    get
+  }
+  #endif
+  public var sampleData: Foundation.Data {
+    get
+  }
+}
+public class FileDownloader {
+  public var request: Alamofire.DownloadRequest?
+  public var resumeData: Foundation.Data?
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func download(from url: Foundation.URL, to destinationURL: Foundation.URL, retries: Swift.Int = 8, delayRetryInterval: Foundation.TimeInterval = 5, progressHandler: ((Swift.Double) -> Swift.Void)? = nil, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func resumeDownload(to destinationURL: Foundation.URL, retries: Swift.Int, delayRetryInterval: Foundation.TimeInterval, progressHandler: ((Swift.Double) -> Swift.Void)? = nil, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+public typealias BaseResponse = NNNetwork.BaseAPI.BaseResponse
+public enum BaseAPI {
+  public struct BaseRequest : Swift.Encodable {
+    public func encode(to encoder: any Swift.Encoder) throws
+  }
+  public struct BaseResponse<T> : Swift.Equatable, Swift.Decodable where T : Swift.Decodable, T : Swift.Equatable {
+    public let code: Swift.String?
+    public let message: Swift.String?
+    public let data: T?
+    public let error: Swift.String?
+    public static func == (a: NNNetwork.BaseAPI.BaseResponse<T>, b: NNNetwork.BaseAPI.BaseResponse<T>) -> Swift.Bool
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}

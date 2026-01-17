@@ -1,0 +1,4027 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "NNNetwork",
+    "printedName": "NNNetwork",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIConfigurable",
+        "printedName": "APIConfigurable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork15APIConfigurableP7baseURL10Foundation0D0Vvp",
+            "mangledName": "$s9NNNetwork15APIConfigurableP7baseURL10Foundation0D0Vvp",
+            "moduleName": "NNNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork15APIConfigurableP7baseURL10Foundation0D0Vvg",
+                "mangledName": "$s9NNNetwork15APIConfigurableP7baseURL10Foundation0D0Vvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIConfigurable>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIConfigurable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutInterval",
+            "printedName": "timeoutInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork15APIConfigurableP15timeoutIntervalSdvp",
+            "mangledName": "$s9NNNetwork15APIConfigurableP15timeoutIntervalSdvp",
+            "moduleName": "NNNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork15APIConfigurableP15timeoutIntervalSdvg",
+                "mangledName": "$s9NNNetwork15APIConfigurableP15timeoutIntervalSdvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIConfigurable>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIConfigurable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiVersion",
+            "printedName": "apiVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork15APIConfigurableP10apiVersionSSvp",
+            "mangledName": "$s9NNNetwork15APIConfigurableP10apiVersionSSvp",
+            "moduleName": "NNNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork15APIConfigurableP10apiVersionSSvg",
+                "mangledName": "$s9NNNetwork15APIConfigurableP10apiVersionSSvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIConfigurable>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIConfigurable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultHeaders",
+            "printedName": "defaultHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork15APIConfigurableP14defaultHeadersSDyS2SGvp",
+            "mangledName": "$s9NNNetwork15APIConfigurableP14defaultHeadersSDyS2SGvp",
+            "moduleName": "NNNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork15APIConfigurableP14defaultHeadersSDyS2SGvg",
+                "mangledName": "$s9NNNetwork15APIConfigurableP14defaultHeadersSDyS2SGvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIConfigurable>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIConfigurable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultHeaders",
+            "printedName": "defaultHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork15APIConfigurablePAAE14defaultHeadersSDyS2SGvp",
+            "mangledName": "$s9NNNetwork15APIConfigurablePAAE14defaultHeadersSDyS2SGvp",
+            "moduleName": "NNNetwork",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork15APIConfigurablePAAE14defaultHeadersSDyS2SGvg",
+                "mangledName": "$s9NNNetwork15APIConfigurablePAAE14defaultHeadersSDyS2SGvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIConfigurable>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIConfigurable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NNNetwork15APIConfigurableP",
+        "mangledName": "$s9NNNetwork15APIConfigurableP",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIEnvironment",
+        "printedName": "APIEnvironment",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getBaseURL",
+            "printedName": "getBaseURL()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14APIEnvironmentP10getBaseURL10Foundation0E0VyFZ",
+            "mangledName": "$s9NNNetwork14APIEnvironmentP10getBaseURL10Foundation0E0VyFZ",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIEnvironment>",
+            "sugared_genericSig": "<Self where Self : NNNetwork.APIEnvironment>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTimeoutInterval",
+            "printedName": "getTimeoutInterval()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14APIEnvironmentP18getTimeoutIntervalSdyFZ",
+            "mangledName": "$s9NNNetwork14APIEnvironmentP18getTimeoutIntervalSdyFZ",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIEnvironment>",
+            "sugared_genericSig": "<Self where Self : NNNetwork.APIEnvironment>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAPIVersion",
+            "printedName": "getAPIVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14APIEnvironmentP13getAPIVersionSSyFZ",
+            "mangledName": "$s9NNNetwork14APIEnvironmentP13getAPIVersionSSyFZ",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIEnvironment>",
+            "sugared_genericSig": "<Self where Self : NNNetwork.APIEnvironment>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NNNetwork14APIEnvironmentP",
+        "mangledName": "$s9NNNetwork14APIEnvironmentP",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIConfig",
+        "printedName": "APIConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork9APIConfigV7baseURL10Foundation0D0Vvp",
+            "mangledName": "$s9NNNetwork9APIConfigV7baseURL10Foundation0D0Vvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV7baseURL10Foundation0D0Vvg",
+                "mangledName": "$s9NNNetwork9APIConfigV7baseURL10Foundation0D0Vvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV7baseURL10Foundation0D0Vvs",
+                "mangledName": "$s9NNNetwork9APIConfigV7baseURL10Foundation0D0Vvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV7baseURL10Foundation0D0VvM",
+                "mangledName": "$s9NNNetwork9APIConfigV7baseURL10Foundation0D0VvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutInterval",
+            "printedName": "timeoutInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork9APIConfigV15timeoutIntervalSdvp",
+            "mangledName": "$s9NNNetwork9APIConfigV15timeoutIntervalSdvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV15timeoutIntervalSdvg",
+                "mangledName": "$s9NNNetwork9APIConfigV15timeoutIntervalSdvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV15timeoutIntervalSdvs",
+                "mangledName": "$s9NNNetwork9APIConfigV15timeoutIntervalSdvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV15timeoutIntervalSdvM",
+                "mangledName": "$s9NNNetwork9APIConfigV15timeoutIntervalSdvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiVersion",
+            "printedName": "apiVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork9APIConfigV10apiVersionSSvp",
+            "mangledName": "$s9NNNetwork9APIConfigV10apiVersionSSvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV10apiVersionSSvg",
+                "mangledName": "$s9NNNetwork9APIConfigV10apiVersionSSvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV10apiVersionSSvs",
+                "mangledName": "$s9NNNetwork9APIConfigV10apiVersionSSvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV10apiVersionSSvM",
+                "mangledName": "$s9NNNetwork9APIConfigV10apiVersionSSvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultHeaders",
+            "printedName": "defaultHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvp",
+            "mangledName": "$s9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvg",
+                "mangledName": "$s9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvs",
+                "mangledName": "$s9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvM",
+                "mangledName": "$s9NNNetwork9APIConfigV14defaultHeadersSDyS2SGvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(environment:customURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIConfig",
+                "printedName": "NNNetwork.APIConfig",
+                "usr": "s:9NNNetwork9APIConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any NNNetwork.APIEnvironment.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIEnvironment",
+                    "printedName": "NNNetwork.APIEnvironment",
+                    "usr": "s:9NNNetwork14APIEnvironmentP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NNNetwork9APIConfigV11environment9customURLAcA14APIEnvironment_pXp_10Foundation0E0VSgtcfc",
+            "mangledName": "$s9NNNetwork9APIConfigV11environment9customURLAcA14APIEnvironment_pXp_10Foundation0E0VSgtcfc",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9NNNetwork9APIConfigV",
+        "mangledName": "$s9NNNetwork9APIConfigV",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "APIConfigurable",
+            "printedName": "APIConfigurable",
+            "usr": "s:9NNNetwork15APIConfigurableP",
+            "mangledName": "$s9NNNetwork15APIConfigurableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIConfigProvider",
+        "printedName": "APIConfigProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "default",
+            "printedName": "default(using:customURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIConfigurable",
+                "printedName": "any NNNetwork.APIConfigurable",
+                "usr": "s:9NNNetwork15APIConfigurableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any NNNetwork.APIEnvironment.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIEnvironment",
+                    "printedName": "NNNetwork.APIEnvironment",
+                    "usr": "s:9NNNetwork14APIEnvironmentP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork17APIConfigProviderO7default5using9customURLAA15APIConfigurable_pAA14APIEnvironment_pXp_10Foundation0G0VSgtFZ",
+            "mangledName": "$s9NNNetwork17APIConfigProviderO7default5using9customURLAA15APIConfigurable_pAA14APIEnvironment_pXp_10Foundation0G0VSgtFZ",
+            "moduleName": "NNNetwork",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9NNNetwork17APIConfigProviderO",
+        "mangledName": "$s9NNNetwork17APIConfigProviderO",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO10invalidURLyA2CmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO10invalidURLyA2CmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "requestFailed",
+            "printedName": "requestFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.String, Swift.String) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.String, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO13requestFailedyACSS_SStcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO13requestFailedyACSS_SStcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "decodingFailed",
+            "printedName": "decodingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.String) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(errorString: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO14decodingFailedyACSS_tcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO14decodingFailedyACSS_tcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.Int, Foundation.Data?) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Foundation.Data?) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, data: Foundation.Data?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO06serverC0yACSi_10Foundation4DataVSgtcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO06serverC0yACSi_10Foundation4DataVSgtcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "unauthorized",
+            "printedName": "unauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO12unauthorizedyA2CmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO12unauthorizedyA2CmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "badRequest",
+            "printedName": "badRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.String, Swift.String) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.String, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO10badRequestyACSS_SStcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO10badRequestyACSS_SStcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO07networkC0yA2CmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO07networkC0yA2CmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "customError",
+            "printedName": "customError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.String, Swift.String?) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String?) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.String, message: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO06customC0yACSS_SSSgtcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO06customC0yACSS_SSSgtcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "downloadBundleFailed",
+            "printedName": "downloadBundleFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO20downloadBundleFailedyA2CmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO20downloadBundleFailedyA2CmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "unzipBundleFailed",
+            "printedName": "unzipBundleFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.String) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO17unzipBundleFailedyACSS_tcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO17unzipBundleFailedyACSS_tcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "others",
+            "printedName": "others",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> (Swift.Int, Foundation.Data?) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Foundation.Data?) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, data: Foundation.Data?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO6othersyACSi_10Foundation4DataVSgtcACmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO6othersyACSi_10Foundation4DataVSgtcACmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNNetwork.NetworkError.Type) -> NNNetwork.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNNetwork.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9NNNetwork12NetworkErrorO7unknownyA2CmF",
+            "mangledName": "$s9NNNetwork12NetworkErrorO7unknownyA2CmF",
+            "moduleName": "NNNetwork"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork12NetworkErrorO16errorDescriptionSSvp",
+            "mangledName": "$s9NNNetwork12NetworkErrorO16errorDescriptionSSvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork12NetworkErrorO16errorDescriptionSSvg",
+                "mangledName": "$s9NNNetwork12NetworkErrorO16errorDescriptionSSvg",
+                "moduleName": "NNNetwork",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "NNNetwork.NetworkError",
+                "usr": "s:9NNNetwork12NetworkErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "NNNetwork.NetworkError",
+                "usr": "s:9NNNetwork12NetworkErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9NNNetwork12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "NNNetwork",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9NNNetwork12NetworkErrorO",
+        "mangledName": "$s9NNNetwork12NetworkErrorO",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseInterceptor",
+        "printedName": "BaseInterceptor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BaseInterceptor",
+                "printedName": "NNNetwork.BaseInterceptor",
+                "usr": "s:9NNNetwork15BaseInterceptorC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NNNetwork15BaseInterceptorCACycfc",
+            "mangledName": "$s9NNNetwork15BaseInterceptorCACycfc",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adapt",
+            "printedName": "adapt(_:for:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Session",
+                "printedName": "Alamofire.Session",
+                "usr": "s:9Alamofire7SessionC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.URLRequest, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.URLRequest, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork15BaseInterceptorC5adapt_3for10completiony10Foundation10URLRequestV_9Alamofire7SessionCys6ResultOyAIs5Error_pGctF",
+            "mangledName": "$s9NNNetwork15BaseInterceptorC5adapt_3for10completiony10Foundation10URLRequestV_9Alamofire7SessionCys6ResultOyAIs5Error_pGctF",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NNNetwork15BaseInterceptorC",
+        "mangledName": "$s9NNNetwork15BaseInterceptorC",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RequestInterceptor",
+            "printedName": "RequestInterceptor",
+            "usr": "s:9Alamofire18RequestInterceptorP",
+            "mangledName": "$s9Alamofire18RequestInterceptorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RequestAdapter",
+            "printedName": "RequestAdapter",
+            "usr": "s:9Alamofire14RequestAdapterP",
+            "mangledName": "$s9Alamofire14RequestAdapterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RequestRetrier",
+            "printedName": "RequestRetrier",
+            "usr": "s:9Alamofire14RequestRetrierP",
+            "mangledName": "$s9Alamofire14RequestRetrierP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Moya",
+        "printedName": "Moya",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkServiceProtocol",
+        "printedName": "NetworkServiceProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0.ResponseType, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_1_0.ResponseType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork22NetworkServiceProtocolP7requesty7Combine12AnyPublisherVy12ResponseTypeQyd__AA0B5ErrorOGqd__AA16APIServiceTargetRd__lF",
+            "mangledName": "$s9NNNetwork22NetworkServiceProtocolP7requesty7Combine12AnyPublisherVy12ResponseTypeQyd__AA0B5ErrorOGqd__AA16APIServiceTargetRd__lF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NNNetwork.NetworkServiceProtocol, τ_1_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<Self, T where Self : NNNetwork.NetworkServiceProtocol, T : NNNetwork.APIServiceTarget>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestWithSuccessCode",
+            "printedName": "requestWithSuccessCode(_:progress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.String, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Moya.ProgressResponse) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Moya.ProgressResponse) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProgressResponse",
+                        "printedName": "Moya.ProgressResponse",
+                        "usr": "s:4Moya16ProgressResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork22NetworkServiceProtocolP22requestWithSuccessCode_8progress7Combine12AnyPublisherVySSAA0B5ErrorOGqd___y4Moya16ProgressResponseVcSgtAA16APIServiceTargetRd__lF",
+            "mangledName": "$s9NNNetwork22NetworkServiceProtocolP22requestWithSuccessCode_8progress7Combine12AnyPublisherVySSAA0B5ErrorOGqd___y4Moya16ProgressResponseVcSgtAA16APIServiceTargetRd__lF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NNNetwork.NetworkServiceProtocol, τ_1_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<Self, T where Self : NNNetwork.NetworkServiceProtocol, T : NNNetwork.APIServiceTarget>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestWithSuccessCode",
+            "printedName": "requestWithSuccessCode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0.ResponseType, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_1_0.ResponseType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork22NetworkServiceProtocolP22requestWithSuccessCodey7Combine12AnyPublisherVy12ResponseTypeQyd__AA0B5ErrorOGqd__AA16APIServiceTargetRd__lF",
+            "mangledName": "$s9NNNetwork22NetworkServiceProtocolP22requestWithSuccessCodey7Combine12AnyPublisherVy12ResponseTypeQyd__AA0B5ErrorOGqd__AA16APIServiceTargetRd__lF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NNNetwork.NetworkServiceProtocol, τ_1_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<Self, T where Self : NNNetwork.NetworkServiceProtocol, T : NNNetwork.APIServiceTarget>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:progress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0.ResponseType, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_1_0.ResponseType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Moya.ProgressResponse) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Moya.ProgressResponse) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProgressResponse",
+                        "printedName": "Moya.ProgressResponse",
+                        "usr": "s:4Moya16ProgressResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork22NetworkServiceProtocolP7request_8progress7Combine12AnyPublisherVy12ResponseTypeQyd__AA0B5ErrorOGqd___y4Moya08ProgressJ0VcSgtAA16APIServiceTargetRd__lF",
+            "mangledName": "$s9NNNetwork22NetworkServiceProtocolP7request_8progress7Combine12AnyPublisherVy12ResponseTypeQyd__AA0B5ErrorOGqd___y4Moya08ProgressJ0VcSgtAA16APIServiceTargetRd__lF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NNNetwork.NetworkServiceProtocol, τ_1_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<Self, T where Self : NNNetwork.NetworkServiceProtocol, T : NNNetwork.APIServiceTarget>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NNNetwork22NetworkServiceProtocolP",
+        "mangledName": "$s9NNNetwork22NetworkServiceProtocolP",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkService",
+        "printedName": "NetworkService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "provider",
+            "printedName": "provider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoyaProvider",
+                "printedName": "Moya.MoyaProvider<Moya.MultiTarget>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MultiTarget",
+                    "printedName": "Moya.MultiTarget",
+                    "usr": "s:4Moya11MultiTargetO"
+                  }
+                ],
+                "usr": "s:4Moya0A8ProviderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork14NetworkServiceC8provider4Moya0E8ProviderCyAE11MultiTargetOGvp",
+            "mangledName": "$s9NNNetwork14NetworkServiceC8provider4Moya0E8ProviderCyAE11MultiTargetOGvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MoyaProvider",
+                    "printedName": "Moya.MoyaProvider<Moya.MultiTarget>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultiTarget",
+                        "printedName": "Moya.MultiTarget",
+                        "usr": "s:4Moya11MultiTargetO"
+                      }
+                    ],
+                    "usr": "s:4Moya0A8ProviderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14NetworkServiceC8provider4Moya0E8ProviderCyAE11MultiTargetOGvg",
+                "mangledName": "$s9NNNetwork14NetworkServiceC8provider4Moya0E8ProviderCyAE11MultiTargetOGvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "responseErrorConverter",
+            "printedName": "responseErrorConverter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Moya.MoyaError) -> NNNetwork.NetworkError)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Moya.MoyaError) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MoyaError",
+                        "printedName": "Moya.MoyaError",
+                        "usr": "s:4Moya0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvp",
+            "mangledName": "$s9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Moya.MoyaError) -> NNNetwork.NetworkError)?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Moya.MoyaError) -> NNNetwork.NetworkError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NetworkError",
+                            "printedName": "NNNetwork.NetworkError",
+                            "usr": "s:9NNNetwork12NetworkErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MoyaError",
+                            "printedName": "Moya.MoyaError",
+                            "usr": "s:4Moya0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvg",
+                "mangledName": "$s9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Moya.MoyaError) -> NNNetwork.NetworkError)?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Moya.MoyaError) -> NNNetwork.NetworkError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NetworkError",
+                            "printedName": "NNNetwork.NetworkError",
+                            "usr": "s:9NNNetwork12NetworkErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MoyaError",
+                            "printedName": "Moya.MoyaError",
+                            "usr": "s:4Moya0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvs",
+                "mangledName": "$s9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvM",
+                "mangledName": "$s9NNNetwork14NetworkServiceC22responseErrorConverterAA0bE0O4Moya0gE0OcSgvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(provider:responseErrorConverter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkService",
+                "printedName": "NNNetwork.NetworkService",
+                "usr": "s:9NNNetwork14NetworkServiceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Moya.MoyaProvider<Moya.MultiTarget>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MoyaProvider",
+                    "printedName": "Moya.MoyaProvider<Moya.MultiTarget>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultiTarget",
+                        "printedName": "Moya.MultiTarget",
+                        "usr": "s:4Moya11MultiTargetO"
+                      }
+                    ],
+                    "usr": "s:4Moya0A8ProviderC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Moya.MoyaError) -> NNNetwork.NetworkError)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Moya.MoyaError) -> NNNetwork.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NNNetwork.NetworkError",
+                        "usr": "s:9NNNetwork12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MoyaError",
+                        "printedName": "Moya.MoyaError",
+                        "usr": "s:4Moya0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NNNetwork14NetworkServiceC8provider22responseErrorConverterAC4Moya0H8ProviderCyAF11MultiTargetOGSg_AA0bF0OAF0hF0OcSgtcfc",
+            "mangledName": "$s9NNNetwork14NetworkServiceC8provider22responseErrorConverterAC4Moya0H8ProviderCyAF11MultiTargetOGSg_AA0bF0OAF0hF0OcSgtcfc",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0.ResponseType, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ResponseType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14NetworkServiceC7requesty7Combine12AnyPublisherVy12ResponseTypeQzAA0B5ErrorOGxAA16APIServiceTargetRzlF",
+            "mangledName": "$s9NNNetwork14NetworkServiceC7requesty7Combine12AnyPublisherVy12ResponseTypeQzAA0B5ErrorOGxAA16APIServiceTargetRzlF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<T where T : NNNetwork.APIServiceTarget>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestWithSuccessCode",
+            "printedName": "requestWithSuccessCode(_:progress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.String, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Moya.ProgressResponse) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Moya.ProgressResponse) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProgressResponse",
+                        "printedName": "Moya.ProgressResponse",
+                        "usr": "s:4Moya16ProgressResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14NetworkServiceC22requestWithSuccessCode_8progress7Combine12AnyPublisherVySSAA0B5ErrorOGx_y4Moya16ProgressResponseVcSgtAA16APIServiceTargetRzlF",
+            "mangledName": "$s9NNNetwork14NetworkServiceC22requestWithSuccessCode_8progress7Combine12AnyPublisherVySSAA0B5ErrorOGx_y4Moya16ProgressResponseVcSgtAA16APIServiceTargetRzlF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<T where T : NNNetwork.APIServiceTarget>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestWithSuccessCode",
+            "printedName": "requestWithSuccessCode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0.ResponseType, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ResponseType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14NetworkServiceC22requestWithSuccessCodey7Combine12AnyPublisherVy12ResponseTypeQzAA0B5ErrorOGxAA16APIServiceTargetRzlF",
+            "mangledName": "$s9NNNetwork14NetworkServiceC22requestWithSuccessCodey7Combine12AnyPublisherVy12ResponseTypeQzAA0B5ErrorOGxAA16APIServiceTargetRzlF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<T where T : NNNetwork.APIServiceTarget>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:progress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0.ResponseType, NNNetwork.NetworkError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ResponseType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NNNetwork.NetworkError",
+                    "usr": "s:9NNNetwork12NetworkErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Moya.ProgressResponse) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Moya.ProgressResponse) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProgressResponse",
+                        "printedName": "Moya.ProgressResponse",
+                        "usr": "s:4Moya16ProgressResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14NetworkServiceC7request_8progress7Combine12AnyPublisherVy12ResponseTypeQzAA0B5ErrorOGx_y4Moya08ProgressI0VcSgtAA16APIServiceTargetRzlF",
+            "mangledName": "$s9NNNetwork14NetworkServiceC7request_8progress7Combine12AnyPublisherVy12ResponseTypeQzAA0B5ErrorOGx_y4Moya08ProgressI0VcSgtAA16APIServiceTargetRzlF",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+            "sugared_genericSig": "<T where T : NNNetwork.APIServiceTarget>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NNNetwork14NetworkServiceC",
+        "mangledName": "$s9NNNetwork14NetworkServiceC",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkServiceProtocol",
+            "printedName": "NetworkServiceProtocol",
+            "usr": "s:9NNNetwork22NetworkServiceProtocolP",
+            "mangledName": "$s9NNNetwork22NetworkServiceProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Moya",
+        "printedName": "Moya",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIServiceTarget",
+        "printedName": "APIServiceTarget",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "ResponseType",
+            "printedName": "ResponseType",
+            "declKind": "AssociatedType",
+            "usr": "s:9NNNetwork16APIServiceTargetP12ResponseTypeQa",
+            "mangledName": "$s9NNNetwork16APIServiceTargetP12ResponseTypeQa",
+            "moduleName": "NNNetwork",
+            "protocolReq": true
+          },
+          {
+            "kind": "Var",
+            "name": "configuration",
+            "printedName": "configuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIConfigurable",
+                "printedName": "any NNNetwork.APIConfigurable",
+                "usr": "s:9NNNetwork15APIConfigurableP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork16APIServiceTargetP13configurationAA15APIConfigurable_pvp",
+            "mangledName": "$s9NNNetwork16APIServiceTargetP13configurationAA15APIConfigurable_pvp",
+            "moduleName": "NNNetwork",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIConfigurable",
+                    "printedName": "any NNNetwork.APIConfigurable",
+                    "usr": "s:9NNNetwork15APIConfigurableP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork16APIServiceTargetP13configurationAA15APIConfigurable_pvg",
+                "mangledName": "$s9NNNetwork16APIServiceTargetP13configurationAA15APIConfigurable_pvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIServiceTarget>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork16APIServiceTargetPAAE7baseURL10Foundation0E0Vvp",
+            "mangledName": "$s9NNNetwork16APIServiceTargetPAAE7baseURL10Foundation0E0Vvp",
+            "moduleName": "NNNetwork",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork16APIServiceTargetPAAE7baseURL10Foundation0E0Vvg",
+                "mangledName": "$s9NNNetwork16APIServiceTargetPAAE7baseURL10Foundation0E0Vvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIServiceTarget>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork16APIServiceTargetPAAE7headersSDyS2SGSgvp",
+            "mangledName": "$s9NNNetwork16APIServiceTargetPAAE7headersSDyS2SGSgvp",
+            "moduleName": "NNNetwork",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork16APIServiceTargetPAAE7headersSDyS2SGSgvg",
+                "mangledName": "$s9NNNetwork16APIServiceTargetPAAE7headersSDyS2SGSgvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIServiceTarget>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sampleData",
+            "printedName": "sampleData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork16APIServiceTargetPAAE10sampleData10Foundation0E0Vvp",
+            "mangledName": "$s9NNNetwork16APIServiceTargetPAAE10sampleData10Foundation0E0Vvp",
+            "moduleName": "NNNetwork",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork16APIServiceTargetPAAE10sampleData10Foundation0E0Vvg",
+                "mangledName": "$s9NNNetwork16APIServiceTargetPAAE10sampleData10Foundation0E0Vvg",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNNetwork.APIServiceTarget>",
+                "sugared_genericSig": "<Self where Self : NNNetwork.APIServiceTarget>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9NNNetwork16APIServiceTargetP",
+        "mangledName": "$s9NNNetwork16APIServiceTargetP",
+        "moduleName": "NNNetwork",
+        "genericSig": "<τ_0_0 : Moya.TargetType, τ_0_0.ResponseType : Swift.Decodable>",
+        "sugared_genericSig": "<Self : Moya.TargetType, Self.ResponseType : Swift.Decodable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TargetType",
+            "printedName": "TargetType",
+            "usr": "s:4Moya10TargetTypeP",
+            "mangledName": "$s4Moya10TargetTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FileDownloader",
+        "printedName": "FileDownloader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "request",
+            "printedName": "request",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Alamofire.DownloadRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadRequest",
+                    "printedName": "Alamofire.DownloadRequest",
+                    "usr": "s:9Alamofire15DownloadRequestC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvp",
+            "mangledName": "$s9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Alamofire.DownloadRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DownloadRequest",
+                        "printedName": "Alamofire.DownloadRequest",
+                        "usr": "s:9Alamofire15DownloadRequestC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvg",
+                "mangledName": "$s9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Alamofire.DownloadRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DownloadRequest",
+                        "printedName": "Alamofire.DownloadRequest",
+                        "usr": "s:9Alamofire15DownloadRequestC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvs",
+                "mangledName": "$s9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvM",
+                "mangledName": "$s9NNNetwork14FileDownloaderC7request9Alamofire15DownloadRequestCSgvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resumeData",
+            "printedName": "resumeData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvp",
+            "mangledName": "$s9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvp",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvg",
+                "mangledName": "$s9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvg",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvs",
+                "mangledName": "$s9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvs",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvM",
+                "mangledName": "$s9NNNetwork14FileDownloaderC10resumeData10Foundation0E0VSgvM",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FileDownloader",
+                "printedName": "NNNetwork.FileDownloader",
+                "usr": "s:9NNNetwork14FileDownloaderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9NNNetwork14FileDownloaderCACycfc",
+            "mangledName": "$s9NNNetwork14FileDownloaderCACycfc",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "download",
+            "printedName": "download(from:to:retries:delayRetryInterval:progressHandler:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Double) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Double) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14FileDownloaderC8download4from2to7retries18delayRetryInterval15progressHandler10completiony10Foundation3URLV_AMSiSdySdcSgys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s9NNNetwork14FileDownloaderC8download4from2to7retries18delayRetryInterval15progressHandler10completiony10Foundation3URLV_AMSiSdySdcSgys6ResultOyyts5Error_pGctF",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeDownload",
+            "printedName": "resumeDownload(to:retries:delayRetryInterval:progressHandler:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Double) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Double) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9NNNetwork14FileDownloaderC14resumeDownload2to7retries18delayRetryInterval15progressHandler10completiony10Foundation3URLV_SiSdySdcSgys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s9NNNetwork14FileDownloaderC14resumeDownload2to7retries18delayRetryInterval15progressHandler10completiony10Foundation3URLV_SiSdySdcSgys6ResultOyyts5Error_pGctF",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9NNNetwork14FileDownloaderC",
+        "mangledName": "$s9NNNetwork14FileDownloaderC",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseAPI",
+        "printedName": "BaseAPI",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "BaseRequest",
+            "printedName": "BaseRequest",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9NNNetwork7BaseAPIO0B7RequestV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B7RequestV6encode2toys7Encoder_p_tKF",
+                "moduleName": "NNNetwork",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9NNNetwork7BaseAPIO0B7RequestV",
+            "mangledName": "$s9NNNetwork7BaseAPIO0B7RequestV",
+            "moduleName": "NNNetwork",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BaseResponse",
+            "printedName": "BaseResponse",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "code",
+                "printedName": "code",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV4codeSSSgvp",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV4codeSSSgvp",
+                "moduleName": "NNNetwork",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV4codeSSSgvg",
+                    "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV4codeSSSgvg",
+                    "moduleName": "NNNetwork",
+                    "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+                    "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "message",
+                "printedName": "message",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV7messageSSSgvp",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV7messageSSSgvp",
+                "moduleName": "NNNetwork",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV7messageSSSgvg",
+                    "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV7messageSSSgvg",
+                    "moduleName": "NNNetwork",
+                    "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+                    "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "data",
+                "printedName": "data",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV4dataxSgvp",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV4dataxSgvp",
+                "moduleName": "NNNetwork",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV4dataxSgvg",
+                    "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV4dataxSgvg",
+                    "moduleName": "NNNetwork",
+                    "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+                    "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "error",
+                "printedName": "error",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV5errorSSSgvp",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV5errorSSSgvp",
+                "moduleName": "NNNetwork",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV5errorSSSgvg",
+                    "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV5errorSSSgvg",
+                    "moduleName": "NNNetwork",
+                    "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+                    "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BaseResponse",
+                    "printedName": "NNNetwork.BaseAPI.BaseResponse<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV4fromAEy_xGs7Decoder_p_tKcfc",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV4fromAEy_xGs7Decoder_p_tKcfc",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BaseResponse",
+                    "printedName": "NNNetwork.BaseAPI.BaseResponse<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BaseResponse",
+                    "printedName": "NNNetwork.BaseAPI.BaseResponse<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV2eeoiySbAEy_xG_AGtFZ",
+                "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV2eeoiySbAEy_xG_AGtFZ",
+                "moduleName": "NNNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:9NNNetwork7BaseAPIO0B8ResponseV",
+            "mangledName": "$s9NNNetwork7BaseAPIO0B8ResponseV",
+            "moduleName": "NNNetwork",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Equatable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Equatable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9NNNetwork7BaseAPIO",
+        "mangledName": "$s9NNNetwork7BaseAPIO",
+        "moduleName": "NNNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/iOS_NNNetwork\/Sources\/NNNetwork\/Base\/NetworkService.swift",
+      "kind": "StringLiteral",
+      "offset": 1103,
+      "length": 9,
+      "value": "\"SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/iOS_NNNetwork\/Sources\/NNNetwork\/Helper\/FileDownloader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 390,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/iOS_NNNetwork\/Sources\/NNNetwork\/Helper\/FileDownloader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 446,
+      "length": 1,
+      "value": "5"
+    }
+  ]
+}
